@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<form role="search">
+  <input type="search" name="q" placeholder="Search" />
+  {% for search in site.data.search %}
+  <button type="submit" formaction="{{ search.queryurl }}">
+    {{ search.name }}
+  </button>
+  {% endfor %}
+</form>
+<br />
+
+<div class="flex-container">
+  <ul>
+    {% for bookmarks in site.data.bookmarks %}
+    <li id="bookmark">
+      <a href="{{ bookmarks.url }}" rel="noopener noreferrer">
+        <img src="{{ bookmarks.image }}" alt="" />
+        <p>{{ bookmarks.name }}</p>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

@@ -1,0 +1,14 @@
+- name: Google
+  queryurl: https://www.google.com/search?q=
+
+- name: SearX
+  queryurl: 'https://searx.bar/search?q='
+
+- name: Startpage
+  queryurl: https://www.startpage.com/sp/search?query=
+
+- name: Qwant
+  queryurl: https://www.qwant.com/?q=
+
+- name: Duck
+  queryurl: https://duckduckgo.com/?q=
